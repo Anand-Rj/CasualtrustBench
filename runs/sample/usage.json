@@ -1,0 +1,52 @@
+{
+ "by_type": {
+  "attribute_trust": {
+   "calls": 26400,
+   "cache_hits": 0,
+   "prompt_tokens": 18357978,
+   "completion_tokens": 6881114,
+   "avg_prompt_tokens": 695.4,
+   "avg_completion_tokens": 260.6
+  },
+  "delegate": {
+   "calls": 105600,
+   "cache_hits": 0,
+   "prompt_tokens": 65409285,
+   "completion_tokens": 7427003,
+   "avg_prompt_tokens": 619.4,
+   "avg_completion_tokens": 70.3
+  },
+  "elicit_prior": {
+   "calls": 12,
+   "cache_hits": 26388,
+   "prompt_tokens": 3327,
+   "completion_tokens": 1393,
+   "avg_prompt_tokens": 277.2,
+   "avg_completion_tokens": 116.1
+  },
+  "probe_verify": {
+   "calls": 8608,
+   "cache_hits": 71192,
+   "prompt_tokens": 6854229,
+   "completion_tokens": 1201821,
+   "avg_prompt_tokens": 796.3,
+   "avg_completion_tokens": 139.6
+  },
+  "subagent": {
+   "calls": 3550,
+   "cache_hits": 102450,
+   "prompt_tokens": 2393740,
+   "completion_tokens": 783321,
+   "avg_prompt_tokens": 674.3,
+   "avg_completion_tokens": 220.7
+  }
+ },
+ "total": {
+  "calls": 144170,
+  "cache_hits": 200030,
+  "prompt_tokens": 93018559,
+  "completion_tokens": 16294652
+ },
+ "wall_clock_s": 317.5,
+ "n_episode_runs": 26400
+}

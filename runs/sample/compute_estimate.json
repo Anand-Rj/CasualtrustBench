@@ -1,0 +1,132 @@
+{
+ "measured_prompt_tokens_avg": {
+  "attribute_trust": 695.4,
+  "delegate": 619.4,
+  "elicit_prior": 277.2,
+  "probe_verify": 796.3,
+  "subagent": 674.3
+ },
+ "assumed_completion_tokens": {
+  "attribute_trust": 350,
+  "delegate": 100,
+  "probe_verify": 200,
+  "subagent": 300,
+  "elicit_prior": 120
+ },
+ "verify_rate_assumed": 0.5,
+ "blocks": [
+  {
+   "block": "Main study (6 conditions x 3 seeds x 800 episodes)",
+   "episode_runs": 14400,
+   "calls": 104800,
+   "prompt_tokens": 71321840,
+   "completion_tokens": 17760000
+  },
+  {
+   "block": "Ablations (5 x condition 6 x 800 episodes x 1 seed)",
+   "episode_runs": 4000,
+   "calls": 28400,
+   "prompt_tokens": 19332120,
+   "completion_tokens": 4720000
+  },
+  {
+   "block": "Robustness (3 model configs x 4 conditions x 800 x 1 seed)",
+   "episode_runs": 9600,
+   "calls": 72000,
+   "prompt_tokens": 48986400,
+   "completion_tokens": 12480000
+  }
+ ],
+ "total": {
+  "episode_runs": 28000,
+  "calls": 205200,
+  "prompt_tokens": 139640360,
+  "completion_tokens": 34960000
+ },
+ "total_with_overhead": {
+  "episode_runs": 37800,
+  "calls": 277020,
+  "prompt_tokens": 188514486,
+  "completion_tokens": 47196000
+ },
+ "gpu_estimates": [
+  {
+   "setup": "Llama-3.1-8B  | 1x A100-80GB",
+   "wall_hours_primary_model": 6.5,
+   "wall_hours_per_robustness_config": 1.2,
+   "wall_hours_everything_on_this_setup": 10.0,
+   "gpu_hours_everything": 10.0,
+   "cloud_cost_usd": [
+    15,
+    34
+   ]
+  },
+  {
+   "setup": "Llama-3.1-8B  | 1x H100-80GB",
+   "wall_hours_primary_model": 3.5,
+   "wall_hours_per_robustness_config": 0.6,
+   "wall_hours_everything_on_this_setup": 5.5,
+   "gpu_hours_everything": 5.5,
+   "cloud_cost_usd": [
+    14,
+    38
+   ]
+  },
+  {
+   "setup": "Qwen2.5-32B   | 2x A100-80GB",
+   "wall_hours_primary_model": 15.0,
+   "wall_hours_per_robustness_config": 2.8,
+   "wall_hours_everything_on_this_setup": 23.3,
+   "gpu_hours_everything": 46.6,
+   "cloud_cost_usd": [
+    69,
+    160
+   ]
+  },
+  {
+   "setup": "Llama-3.1-70B | 4x A100-80GB",
+   "wall_hours_primary_model": 22.5,
+   "wall_hours_per_robustness_config": 4.1,
+   "wall_hours_everything_on_this_setup": 34.9,
+   "gpu_hours_everything": 139.8,
+   "cloud_cost_usd": [
+    208,
+    479
+   ]
+  },
+  {
+   "setup": "Llama-3.1-70B | 2x H100 (FP8)",
+   "wall_hours_primary_model": 11.9,
+   "wall_hours_per_robustness_config": 2.2,
+   "wall_hours_everything_on_this_setup": 18.5,
+   "gpu_hours_everything": 36.9,
+   "cloud_cost_usd": [
+    92,
+    254
+   ]
+  }
+ ],
+ "api_estimates": [
+  {
+   "price_in_out_per_M": [
+    0.15,
+    0.6
+   ],
+   "cost_usd_everything": 57
+  },
+  {
+   "price_in_out_per_M": [
+    1.0,
+    4.0
+   ],
+   "cost_usd_everything": 377
+  },
+  {
+   "price_in_out_per_M": [
+    3.0,
+    15.0
+   ],
+   "cost_usd_everything": 1273
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+condition,TCE_affected,TCE_all,TUSE,regret,over_distrust,under_distrust,cause_acc,FCSR,success,verify_rate
+claimgraph,0.043,0.017,0.004,0.152,0.25,0.25,1.0,0.351,0.921,0.734
+claimgraph_update,0.016,0.01,0.0,0.131,0.25,0.0,1.0,0.301,0.933,0.766
+no_memory,0.099,0.031,0.0,0.225,0.25,0.75,0.0,0.428,0.894,0.672
+outcome_only,0.141,0.119,0.128,0.127,0.5,0.5,0.0,0.392,0.926,0.781
+raw_history,0.121,0.087,0.088,0.131,0.5,0.5,0.485,0.406,0.924,0.766
+skill_conditioned,0.141,0.042,0.022,0.159,0.5,0.5,0.0,0.356,0.917,0.766
